@@ -15,11 +15,10 @@ public class MostFrequentIntegerInArray {
             array[i] = in.nextInt();
         }
 
-        Integer result = mostFrequentInteger(array);
-        System.out.print(result);
+        mostFrequentInteger(array);
     }
 
-    public static Integer mostFrequentInteger (Integer []array){
+    public static void mostFrequentInteger (Integer []array){
 
         Arrays.sort(array);
 
@@ -40,6 +39,7 @@ public class MostFrequentIntegerInArray {
           }
         }
 
-        return result = (pastCount == count) ? 0 : ((pastCount > count) ? frequent : present);
+        result = (pastCount == count) ? 0 : ((pastCount > count) ? frequent : present);
+        System.out.print(result);
     }
 }
