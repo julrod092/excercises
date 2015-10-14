@@ -18,19 +18,25 @@ public class FindPairOfNumbersThatSumIsTen {
 
   public static void pairOfNumberThatSumIsTen (Integer []array){
 
-    for (Integer i = 0 ; i < array.length ; i++) {
-      Integer lastOne = array.length - 1;
-      if (i != (lastOne - i)){
-        Integer sum = array[i] + array[lastOne - i];
-        if (sum == 10){
-          System.out.println("(" + array[i] + ", " + array[lastOne - i] +")");
-          break;
+    Integer i = 0;
+    Integer j = array.length - 1;
+    Integer a = 0;
+    Integer b = 0;
+
+    while (i < j) {
+      if (array[i] + array[j] == 10) {
+        a = array[i];
+        b = array[j];
+        break;
+      }else{
+        if(array[i] + array[j] > 10){
+          j--;
         }else{
-          continue;
+          i++;
         }
-      } else {
-        continue;
+        System.out.println("i = " + i + " j = " + j);
       }
     }
+    System.out.println("(" + a + ", " + b + ")");
   }
 }
