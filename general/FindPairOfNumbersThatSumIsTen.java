@@ -34,7 +34,6 @@ public class FindPairOfNumbersThatSumIsTen {
         }else{
           i++;
         }
-        System.out.println("i = " + i + " j = " + j);
       }
     }
     System.out.println("(" + a + ", " + b + ")");
