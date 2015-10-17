@@ -62,7 +62,7 @@
 - Reverse a linked list iteratively and recursively
 
 ###Sorting
-- Implement bubble sort
+- **Implement bubble sort**
 - Implement selection sort
 - Implement insertion sort
 - Implement merge sort
